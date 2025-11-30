@@ -1,3 +1,6 @@
+/**
+ * Timebox class ensures that the given callback always takes a fixed amount of time to execute, even if its actual execution completes sooner.
+ */
 export class Timebox {
     /**
      * Indicates if the timebox is allowed to return early.

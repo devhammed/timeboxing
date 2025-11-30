@@ -1,6 +1,6 @@
 {
   "name": "timeboxing",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Timebox class ensures that the given callback always takes a fixed amount of time to execute, even if its actual execution completes sooner. This is particularly useful for cryptographic operations and user authentication checks, where attackers might exploit variations in execution time to infer sensitive information.",
   "type": "module",
   "main": "dist/index.js",
