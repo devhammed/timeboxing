@@ -1,0 +1,49 @@
+{
+  "name": "timeboxing",
+  "version": "0.1.0",
+  "description": "Timebox class ported from Laravel that ensures that the given callback always takes a fixed amount of time to execute, even if its actual execution completes sooner. This is particularly useful for cryptographic operations and user authentication checks, where attackers might exploit variations in execution time to infer sensitive information.",
+  "type": "module",
+  "main": "dist/index.js",
+  "source": "src/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "test": "node --loader ts-node/esm --test ./src/**/*.test.ts",
+    "build": "parcel build src/index.ts",
+    "prebuild": "rm -rf dist && rm -rf .parcel-cache",
+    "prepublishOnly": "npm run build"
+  },
+  "files": [
+    "dist",
+    "jsr.json",
+    "tsconfig.json",
+    "package.json",
+    "README.md"
+  ],
+  "keywords": [
+    "timeboxing",
+    "laravel",
+    "security",
+    "cryptography",
+    "authentication",
+    "typescript",
+    "javascript"
+  ],
+  "author": "Hammed Oyedele <itz.harmid@gmail.com> (https://github.com/devhammed)",
+  "license": "MIT",
+  "homepage": "https://github.com/devhammed/timeboxing",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/devhammed/timeboxing"
+  },
+  "bugs": {
+    "url": "https://github.com/devhammed/timeboxing/issues"
+  },
+  "devDependencies": {
+    "@parcel/packager-ts": "^2.16.1",
+    "@parcel/transformer-typescript-types": "^2.16.1",
+    "@types/node": "^24.10.1",
+    "parcel": "^2.16.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
+  }
+}
